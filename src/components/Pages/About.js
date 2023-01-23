@@ -102,7 +102,7 @@ const About = () => {
                   I coach out of my home in Woodstock, but I am willing to come to you! I can’t wait!
                 </div>
                 <div class="m-4 text-lg">
-                  -Brian
+                  - Brian
                 </div>
               </div>
               
