@@ -57,7 +57,7 @@ class Header extends React.Component {
         <div class="fixed w-screen z-20">
           <div class="p-4 bg-gray-100 flex justify-between">
             <div class="lg:grid grid-cols-2">
-              <a to="/" className="text-navy lg:ml-2 text-2xl lg:text-4xl font-bold">
+              <a href="/" className="text-navy lg:ml-2 text-2xl lg:text-4xl font-bold">
                 Brian Osborne
               </a>
               <div class="italic lg:mt-3 lg:ml-3">
@@ -65,7 +65,7 @@ class Header extends React.Component {
               </div>
             </div>
             <div className="hidden delay-75 sm:flex text-kack-800 justify-evenly text-md cursor-pointer text-gray-600">
-              <a to="/" onClick={this.scrollToTop} className="mx-2 lg:mt-3 mt-4 px-2  hover:text-blue-700 transition ease-out duration-300">Home</a>              
+              <a href="/" onClick={this.scrollToTop} className="mx-2 lg:mt-3 mt-4 px-2  hover:text-blue-700 transition ease-out duration-300">Home</a>              
               <Link className=" delay-75 mx-2 lg:mt-3 mt-4 px-2  hover:text-blue-700 cursor-pointer transition ease-out duration-300" to="about" offset={-65} smooth={true} duration={800} >About</Link>
               <Link className="delay-75 mx-2 lg:mt-3 mt-4 px-2  hover:text-blue-700 cursor-pointer transition ease-out duration-300" to="media"  offset={-105} smooth={true} duration={800} >Media</Link>
               <Link className="mx-2 delay-75 lg:mt-3 mt-4 px-2 cursor-pointer hover:text-blue-700 transition ease-out duration-300" to="contact"  offset={-65} smooth={true} duration={800} >Contact</Link>
