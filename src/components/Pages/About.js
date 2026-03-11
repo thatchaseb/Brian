@@ -9,6 +9,7 @@ import { Element } from 'react-scroll'
 
 
 import RM from '../media/resume.pdf'
+import CV from '../media/CV.pdf'
 import pic16 from "../media/Head4.jpg"
 
 
@@ -215,9 +216,9 @@ const About = () => {
                   <div class="mt-4 pt-4">
                     <a href={RM} className="px-5 py-3 transition duration-300 ease-out delay-150 bg-blue-200 rounded cursor-pointer hover:text-blue-700 " target="_blank" rel="noreferrer">Download Resume</a>
                   </div>
-                  {/* <div class="mt-4 pt-4">
+                  <div class="mt-4 pt-4">
                     <a href={CV} className="px-5 py-3 mt-12 transition duration-300 ease-out delay-150 bg-blue-200 rounded cursor-pointer hover:text-blue-700" target="_blank" rel="noreferrer">Download Curriculum Vita</a>
-                  </div> */}
+                  </div>
                 </div>
               </div>
             </div>
