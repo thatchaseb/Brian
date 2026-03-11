@@ -9,8 +9,6 @@ import { Element } from 'react-scroll'
 
 
 import RM from '../media/resume.pdf'
-import CV from '../media/CV.pdf'
-
 import pic16 from "../media/Head4.jpg"
 
 
@@ -161,7 +159,7 @@ const About = () => {
                  Brian loves collaborating with dedicated directors, producers and crew from the audition/call back process to opening night. Having worked with a numbers of pit orchestras or various sizes, he can accommodate your theatre with the resources you have available. He can also help arrange instrumental parts to adjust to a specific number of players, in addition to cueing from Cuelab and Mainstage software.
               </div>
               
-              <div className="md:grid md:grid-cols-2 lg:mt-16 mt-8">
+              <div className="mt-8 md:grid md:grid-cols-2 lg:mt-16">
                 <div className="">
                   <iframe className=" w-3/4 m-auto lg:h-[24rem] h-[16rem]" allowfullscreen="allowfullscreen" src="https://www.youtube.com/embed/0-F9KaY-aKs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" ></iframe>
                 </div>
@@ -215,11 +213,11 @@ const About = () => {
                 <div class="sm:flex sm:justify-evenly mt-8">
 
                   <div class="mt-4 pt-4">
-                    <a href={RM} className="bg-blue-200  px-5 py-3 rounded  hover:text-blue-700 cursor-pointer transition ease-out duration-300 delay-150 " target="_blank" rel="noreferrer">Download Resume</a>
+                    <a href={RM} className="px-5 py-3 transition duration-300 ease-out delay-150 bg-blue-200 rounded cursor-pointer hover:text-blue-700 " target="_blank" rel="noreferrer">Download Resume</a>
                   </div>
-                  <div class="mt-4 pt-4">
-                    <a href={CV} className="bg-blue-200  px-5 py-3 rounded mt-12 hover:text-blue-700 cursor-pointer transition ease-out duration-300 delay-150" target="_blank" rel="noreferrer">Download Curriculum Vita</a>
-                  </div>
+                  {/* <div class="mt-4 pt-4">
+                    <a href={CV} className="px-5 py-3 mt-12 transition duration-300 ease-out delay-150 bg-blue-200 rounded cursor-pointer hover:text-blue-700" target="_blank" rel="noreferrer">Download Curriculum Vita</a>
+                  </div> */}
                 </div>
               </div>
             </div>
@@ -240,7 +238,7 @@ const About = () => {
       
 
       <div class="pt-12 mb-12  sm:flex sm:justify-between">
-	      <div className="flex justify-evenly text-md pointer text-gray-600 sm:text-md text-sm pr-8">
+	      <div className="flex pr-8 text-sm text-gray-600 justify-evenly text-md pointer sm:text-md">
     		  {renderedItems}
     		</div>
 	    </div>
