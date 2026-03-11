@@ -18,24 +18,24 @@ const Contact = () => {
   const form = useRef();
 
   return (
-    <Element name="contact" className="p-6 text-navy bg-gray-100">
+    <Element name="contact" className="p-6 bg-gray-100 text-navy">
     <div class="md:w-3/4 md:mx-auto">
-    <div className="my-8 text-3xl font-bold">
-    	Contact
+    <div className="my-8 text-4xl font-bold">
+    	Contact Brian
     </div>
     <form id="contact-form" ref={form} onSubmit={handleSubmit}>
-      <div className="grid md:grid-cols-4 grid-cols-2 gap-4">
+      <div className="grid grid-cols-2 gap-4 md:grid-cols-4">
         <div className="flex flex-col">
           <label htmlFor="first-name">First name</label>
-          <input type="text" id="first-name" name="first-name" className="form-input border-2 border-navy px-3 py-2 rounded-md" required />
+          <input type="text" id="first-name" name="first-name" className="px-3 py-2 border-2 rounded-md form-input border-navy" required />
         </div>
         <div className="flex flex-col">
           <label htmlFor="last-name">Last name</label>
-          <input type="text" id="last-name" name="last-name" className="form-input border-2 border-navy px-3 py-2 rounded-md" required />
+          <input type="text" id="last-name" name="last-name" className="px-3 py-2 border-2 rounded-md form-input border-navy" required />
         </div>
         <div className="flex flex-col">
           <label htmlFor="email">Email</label>
-          <input type="email" id="email" name="email" className="form-input border-2 border-navy px-3 py-2 rounded-md" required />
+          <input type="email" id="email" name="email" className="px-3 py-2 border-2 rounded-md form-input border-navy" required />
         </div>
         <div className="flex flex-col">
           <label htmlFor="phone">
@@ -44,24 +44,24 @@ const Contact = () => {
               <span className="ml-auto opacity-75">Optional</span>
             </div>
           </label>
-          <input type="tel" id="phone" name="phone" className="form-input border-2 border-navy px-3 py-2 rounded-md" />
+          <input type="tel" id="phone" name="phone" className="px-3 py-2 border-2 rounded-md form-input border-navy" />
         </div>
         <div className="flex flex-col col-span-2">
           <label htmlFor="subject">Subject</label>
-          <input type="text" id="subject" name="subject" className="form-input border-2 border-navy px-3 py-2 rounded-md" required />
+          <input type="text" id="subject" name="subject" className="px-3 py-2 border-2 rounded-md form-input border-navy" required />
         </div>
-        <div className="flex flex-col md:col-span-4 col-span-2">
+        <div className="flex flex-col col-span-2 md:col-span-4">
           <label htmlFor="subject">
             <div className="flex align-items">
               Message
               <span className="ml-auto opacity-75">Max. 500 characters</span>
             </div>
           </label>
-          <textarea maxLength="500" rows="4" type="text" id="message" name="message" className="form-input border-2 border-navy px-3 py-2 rounded-md" required />
+          <textarea maxLength="500" rows="4" type="text" id="message" name="message" className="px-3 py-2 border-2 rounded-md form-input border-navy" required />
         </div>
       </div>
       <div className="flex justify-end py-4">
-        <button type="submit" class="bg-blue-900 text-white font-bold py-2 px-4 rounded focus:ring focus:ring-blue-300 hover:bg-blue-700">
+        <button type="submit" class="bg-navy text-white font-bold py-2 px-4 rounded focus:ring focus:ring-blue-300 hover:bg-blue-700">
           Submit
         </button>
       </div>

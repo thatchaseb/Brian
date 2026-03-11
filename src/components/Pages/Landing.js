@@ -65,9 +65,9 @@ const items = [
 const renderedQuotes = items.map((item, index) => {
     return (
       <React.Fragment key={item.sig}>
-        <div classname="w-full">
+        <div classname="w-full ">
           <div class=" lg:w-64 lg:h-64 md:w-48 md:h-48 w-40 h-40 mx-auto ">
-            <img src={item.photo} alt="item" className="h-full object-cover object-top"/>
+            <img src={item.photo} alt="item" className="object-cover object-top h-full"/>
           </div>
           <div class="mt-8 mx-auto px-4">
             <span class="mt-8">
@@ -96,8 +96,8 @@ const Landing = () => {
 
 				      	
       	<div class="sm:col-span-2 font-bold font-sarif relative text-xs sm:text-xs md:text-sm lg:text-md text-deep-100 text-center p-4">
-          <div class="my-auto sm:absolute sm:z-10 ">
-            <div class="sm:mx-auto mt-4 lg:mt-20 w-full mb-8 flex justify-center">
+          <div class="my-auto sm:absolute sm:z-10 w-full flex justify-center">
+            <div class="mt-4 lg:mt-20 w-full mb-8 flex justify-center max-w-lg ">
             <Carousel 
               autoPlay="true"
               transitionTime="1000" 
@@ -113,9 +113,8 @@ const Landing = () => {
               width="100%"
               height="100%"
             >
-              {renderedQuotes}
-
               
+              {renderedQuotes}
 
             </Carousel>
             </div>

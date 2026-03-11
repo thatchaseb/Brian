@@ -20,7 +20,7 @@ const Accordion = ({ items }) => {
   });
 
   return (
-    <div className="flex justify-evenly text-md pointer text-gray-600">
+    <div className="flex max-w-lg text-gray-600 justify-evenly text-md pointer">
       {renderedItems}
     </div>
   )

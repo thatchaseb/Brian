@@ -34,7 +34,7 @@ const Media = () => {
     <Element name="media" class=" m-4 mt-20 mb-8 md:w-3/4 md:mx-auto">
     	
       <Carousel  autoPlay="true" centerMode="true" dynamicHeight="true" transitionTime="500" interval="4000" stopOnHover="true" centerSlidePercentage="50" height="60px" infiniteLoop="true" >
-                <div class="h-64">
+                <div class="h-64 px-1">
                     <img src={pic1} alt="media1"/>
                 </div>
                 
