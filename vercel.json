@@ -1,3 +1,5 @@
 {
-  "nodejs": "24.x"
+  "engines": {
+    "node": "24.x"
+  }
 }
